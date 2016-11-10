@@ -1,0 +1,17 @@
+application: blog-148309
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /stylesheet
+  static_dir: stylesheet
+- url: /.*
+  script: index.app
+
+
+
+libraries:
+- name: jinja2
+  version: latest
